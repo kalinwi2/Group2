@@ -1,0 +1,17 @@
+1.Compile the Test1.java file. 
+Why did it fail? 
+>Answer: It contained another public class.
+
+
+2.Compile the Test2.java file. 
+ Why did it fail? 
+>Answer: The public class name was wrong.
+
+3.Compile and run the Test3 class. 
+ Why did it fail? 
+>Answer: The parameter of the main method lacked "[]" after the "String".
+
+
+4.Compile and run the Test4 class. 
+ Why did it fail? 
+>Answer: The main method lacked "static".
