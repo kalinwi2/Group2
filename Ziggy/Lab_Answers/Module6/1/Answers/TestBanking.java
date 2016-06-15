@@ -37,9 +37,13 @@ public class TestBanking {
       customer = bank.getCustomer(0);
       account = customer.getAccount();
       System.out.println("Withdraw 150.00: " + account.withdraw(150.00));
+      System.out.println(account.getBalance());
       System.out.println("Deposit 22.50: " + account.deposit(22.50));
+      System.out.println(account.getBalance());
       System.out.println("Withdraw 47.62: " + account.withdraw(47.62));
+      System.out.println(account.getBalance());
       System.out.println("Withdraw 400.00: " + account.withdraw(400.00));
+      System.out.println(account.getBalance());
       System.out.println("Customer [" + customer.getLastName() + ", " + customer.getFirstName() + "] has a balance of "
          + account.getBalance());
 
@@ -49,9 +53,13 @@ public class TestBanking {
       customer = bank.getCustomer(1);
       account = customer.getAccount();
       System.out.println("Withdraw 150.00: " + account.withdraw(150.00));
+      System.out.println(account.getBalance());
       System.out.println("Deposit 22.50: " + account.deposit(22.50));
+      System.out.println(account.getBalance());
       System.out.println("Withdraw 47.62: " + account.withdraw(47.62));
+      System.out.println(account.getBalance());
       System.out.println("Withdraw 400.00: " + account.withdraw(400.00));
+      System.out.println(account.getBalance());
       System.out.println("Customer [" + customer.getLastName() + ", " + customer.getFirstName() + "] has a balance of "
          + account.getBalance());
 
@@ -61,11 +69,20 @@ public class TestBanking {
       customer = bank.getCustomer(2);
       account = customer.getAccount();
       System.out.println("Withdraw 150.00: " + account.withdraw(150.00));
+      System.out.println(account.getBalance());
+      System.out.println(account.getOverdraft());
       System.out.println("Deposit 22.50: " + account.deposit(22.50));
+      System.out.println(account.getBalance());
+      System.out.println(account.getOverdraft());
       System.out.println("Withdraw 47.62: " + account.withdraw(47.62));
+      System.out.println(account.getBalance());
+      System.out.println(account.getOverdraft());
       System.out.println("Withdraw 400.00: " + account.withdraw(400.00));
+      System.out.println(account.getBalance());
+      System.out.println(account.getOverdraft());
       System.out.println("Customer [" + customer.getLastName() + ", " + customer.getFirstName() + "] has a balance of "
          + account.getBalance());
+      System.out.println(account.getOverdraft());
 
       System.out.println();
 
@@ -73,9 +90,14 @@ public class TestBanking {
       customer = bank.getCustomer(3);
       account = customer.getAccount();
       System.out.println("Deposit 150.00: " + account.deposit(150.00));
+      System.out.println(account.getBalance());
+      System.out.println(account.getOverdraft());
       System.out.println("Withdraw 750.00: " + account.withdraw(750.00));
+      System.out.println(account.getBalance());
+      System.out.println(account.getOverdraft());
       System.out.println("Customer [" + customer.getLastName() + ", " + customer.getFirstName() + "] has a balance of "
          + account.getBalance());
+      System.out.println(account.getOverdraft());
 
    }
 }

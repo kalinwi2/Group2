@@ -4,8 +4,6 @@ public class CheckingAccount extends Account {
 
    private static final double NO_PROTECTION = -1.0;
 
-   private double overdraftProtection;
-
    public CheckingAccount(double bal, double protect) {
       super(bal);
       overdraftProtection = protect;
@@ -14,7 +12,7 @@ public class CheckingAccount extends Account {
    public CheckingAccount(double bal) {
       this(bal, NO_PROTECTION);
    }
-
+   
    public boolean withdraw(double amount) {
       boolean result = true;
 
